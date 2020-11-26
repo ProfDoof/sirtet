@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tetris: Program 5</title>
+
+    <link rel="stylesheet" href="tetris.css">
+    <script src="three.min.js"></script>
+    <script type="text/javascript" src="gl-matrix-min.js"></script>
+    <script type="module" src="main.js"></script>
+</head>
+<body onresize="location.reload()">
+    <img id="texture" src="cross-scratches.png" alt="" hidden>
+    <div id="scoreDiv" class="gameDiv">
+        <h1>Current Score</h1>
+        <p id="currentScore">placeholder text score</p>
+    </div>
+    <div id="levelDiv" class="gameDiv">
+        <h1>Current Level</h1>
+        <p id="currentLevel">placeholder text level</p>
+    </div>
+    <div id="roundDiv" class="gameDiv">
+        <h1>Current Round</h1>
+        <p id="currentRound">placeholder text round</p>
+    </div>
+    <div id="startGameModal" class="modalWithButton">
+        <div class="gameDiv">
+            <h1>Sirtet</h1>
+            <p>A game created for CSC561 at NCSU by John Marsden.</p>
+            <button id="startGameButton"><b>Start Game</b></button>
+        </div>
+    </div>
+    <div id="endGameModal" class="modalWithButton deactivated">
+        <div class="gameDiv">
+            <h1>Game Over</h1>
+            <p id="endgameScoreText"></p>
+            <button id="restartGameButton" onclick="location.reload()"><b>Restart</b></button>
+        </div>
+    </div>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
